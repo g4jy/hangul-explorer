@@ -1,0 +1,4061 @@
+{
+  "consonants": [
+    {
+      "char": "ㄱ",
+      "romanization": "g/k",
+      "type": "basic",
+      "name": "giyeok",
+      "mnemonic": {
+        "image": "gun",
+        "text": "Looks like a gun → G sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": "ㅋ",
+      "doublePair": "ㄲ",
+      "audioFile": "consonants/g.mp3",
+      "articulatory": "Back of tongue touches soft palate"
+    },
+    {
+      "char": "ㄴ",
+      "romanization": "n",
+      "type": "basic",
+      "name": "nieun",
+      "mnemonic": {
+        "image": "nose",
+        "text": "Shape of nose bridge → N sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": null,
+      "audioFile": "consonants/n.mp3",
+      "articulatory": "Tongue tip touches behind upper teeth"
+    },
+    {
+      "char": "ㄷ",
+      "romanization": "d/t",
+      "type": "basic",
+      "name": "digeut",
+      "mnemonic": {
+        "image": "door",
+        "text": "D shape like a door frame → D sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": "ㅌ",
+      "doublePair": "ㄸ",
+      "audioFile": "consonants/d.mp3",
+      "articulatory": "Tongue tip touches upper gum ridge"
+    },
+    {
+      "char": "ㄹ",
+      "romanization": "r/l",
+      "type": "basic",
+      "name": "rieul",
+      "mnemonic": {
+        "image": "ladder",
+        "text": "Looks like a ladder → R/L sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": null,
+      "audioFile": "consonants/r.mp3",
+      "articulatory": "Tongue flaps against upper gum ridge"
+    },
+    {
+      "char": "ㅁ",
+      "romanization": "m",
+      "type": "basic",
+      "name": "mieum",
+      "mnemonic": {
+        "image": "mouth",
+        "text": "Square like a closed mouth → M sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": null,
+      "audioFile": "consonants/m.mp3",
+      "articulatory": "Both lips press together"
+    },
+    {
+      "char": "ㅂ",
+      "romanization": "b/p",
+      "type": "basic",
+      "name": "bieup",
+      "mnemonic": {
+        "image": "bed",
+        "text": "Looks like a bed frame → B sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": "ㅍ",
+      "doublePair": "ㅃ",
+      "audioFile": "consonants/b.mp3",
+      "articulatory": "Both lips press and release"
+    },
+    {
+      "char": "ㅅ",
+      "romanization": "s",
+      "type": "basic",
+      "name": "siot",
+      "mnemonic": {
+        "image": "sail",
+        "text": "Looks like a sail → S sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": "ㅆ",
+      "audioFile": "consonants/s.mp3",
+      "articulatory": "Air passes through narrow gap at upper teeth"
+    },
+    {
+      "char": "ㅇ",
+      "romanization": "-/ng",
+      "type": "basic",
+      "name": "ieung",
+      "mnemonic": {
+        "image": "zero",
+        "text": "Circle = zero sound (silent as initial)"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": null,
+      "audioFile": "consonants/ieung.mp3",
+      "articulatory": "Silent as initial; 'ng' as final consonant"
+    },
+    {
+      "char": "ㅈ",
+      "romanization": "j",
+      "type": "basic",
+      "name": "jieut",
+      "mnemonic": {
+        "image": "jug",
+        "text": "Like a jug handle → J sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": "ㅊ",
+      "doublePair": "ㅉ",
+      "audioFile": "consonants/j.mp3",
+      "articulatory": "Tongue touches behind upper teeth with friction"
+    },
+    {
+      "char": "ㅊ",
+      "romanization": "ch",
+      "type": "aspirated",
+      "name": "chieut",
+      "mnemonic": {
+        "image": "church",
+        "text": "ㅈ + extra stroke = CH (aspirated J)"
+      },
+      "whisperTest": true,
+      "basePair": "ㅈ",
+      "audioFile": "consonants/ch.mp3",
+      "articulatory": "Like ㅈ but with strong burst of air"
+    },
+    {
+      "char": "ㅋ",
+      "romanization": "k",
+      "type": "aspirated",
+      "name": "kieuk",
+      "mnemonic": {
+        "image": "key",
+        "text": "ㄱ + extra stroke = K (aspirated G)"
+      },
+      "whisperTest": true,
+      "basePair": "ㄱ",
+      "audioFile": "consonants/k.mp3",
+      "articulatory": "Like ㄱ but with strong burst of air"
+    },
+    {
+      "char": "ㅌ",
+      "romanization": "t",
+      "type": "aspirated",
+      "name": "tieut",
+      "mnemonic": {
+        "image": "teeth",
+        "text": "ㄷ + extra stroke = T (aspirated D)"
+      },
+      "whisperTest": true,
+      "basePair": "ㄷ",
+      "audioFile": "consonants/t.mp3",
+      "articulatory": "Like ㄷ but with strong burst of air"
+    },
+    {
+      "char": "ㅍ",
+      "romanization": "p",
+      "type": "aspirated",
+      "name": "pieup",
+      "mnemonic": {
+        "image": "pizza",
+        "text": "ㅂ + extra stroke = P (aspirated B)"
+      },
+      "whisperTest": true,
+      "basePair": "ㅂ",
+      "audioFile": "consonants/p.mp3",
+      "articulatory": "Like ㅂ but with strong burst of air"
+    },
+    {
+      "char": "ㅎ",
+      "romanization": "h",
+      "type": "basic",
+      "name": "hieut",
+      "mnemonic": {
+        "image": "hat",
+        "text": "Person wearing a hat → H sound"
+      },
+      "whisperTest": false,
+      "aspiratedPair": null,
+      "doublePair": null,
+      "audioFile": "consonants/h.mp3",
+      "articulatory": "Air flows freely from throat"
+    },
+    {
+      "char": "ㄲ",
+      "romanization": "kk",
+      "type": "double",
+      "name": "ssang-giyeok",
+      "mnemonic": {
+        "image": "tense",
+        "text": "Double ㄱ = tense K sound"
+      },
+      "whisperTest": false,
+      "basePair": "ㄱ",
+      "audioFile": "consonants/kk.mp3",
+      "articulatory": "Like ㄱ but with tense throat, no air"
+    },
+    {
+      "char": "ㄸ",
+      "romanization": "tt",
+      "type": "double",
+      "name": "ssang-digeut",
+      "mnemonic": {
+        "image": "tense",
+        "text": "Double ㄷ = tense T sound"
+      },
+      "whisperTest": false,
+      "basePair": "ㄷ",
+      "audioFile": "consonants/tt.mp3",
+      "articulatory": "Like ㄷ but with tense throat, no air"
+    },
+    {
+      "char": "ㅃ",
+      "romanization": "pp",
+      "type": "double",
+      "name": "ssang-bieup",
+      "mnemonic": {
+        "image": "tense",
+        "text": "Double ㅂ = tense P sound"
+      },
+      "whisperTest": false,
+      "basePair": "ㅂ",
+      "audioFile": "consonants/pp.mp3",
+      "articulatory": "Like ㅂ but with tense throat, no air"
+    },
+    {
+      "char": "ㅆ",
+      "romanization": "ss",
+      "type": "double",
+      "name": "ssang-siot",
+      "mnemonic": {
+        "image": "tense",
+        "text": "Double ㅅ = tense S sound"
+      },
+      "whisperTest": false,
+      "basePair": "ㅅ",
+      "audioFile": "consonants/ss.mp3",
+      "articulatory": "Like ㅅ but sharper and tenser"
+    },
+    {
+      "char": "ㅉ",
+      "romanization": "jj",
+      "type": "double",
+      "name": "ssang-jieut",
+      "mnemonic": {
+        "image": "tense",
+        "text": "Double ㅈ = tense J sound"
+      },
+      "whisperTest": false,
+      "basePair": "ㅈ",
+      "audioFile": "consonants/jj.mp3",
+      "articulatory": "Like ㅈ but with tense throat, no air"
+    }
+  ],
+  "vowels": [
+    {
+      "char": "ㅏ",
+      "romanization": "a",
+      "type": "basic-vertical",
+      "position": "right",
+      "name": "a",
+      "mnemonic": {
+        "image": "right-hand",
+        "text": "Right hand stretched out = Ah!"
+      },
+      "audioFile": "vowels/a.mp3",
+      "yCompound": "ㅑ"
+    },
+    {
+      "char": "ㅓ",
+      "romanization": "eo",
+      "type": "basic-vertical",
+      "position": "right",
+      "name": "eo",
+      "mnemonic": {
+        "image": "left-hand",
+        "text": "Left hand out = Uh!"
+      },
+      "audioFile": "vowels/eo.mp3",
+      "yCompound": "ㅕ"
+    },
+    {
+      "char": "ㅗ",
+      "romanization": "o",
+      "type": "basic-horizontal",
+      "position": "bottom",
+      "name": "o",
+      "mnemonic": {
+        "image": "sunrise",
+        "text": "Line on top like sunrise = Oh!"
+      },
+      "audioFile": "vowels/o.mp3",
+      "yCompound": "ㅛ"
+    },
+    {
+      "char": "ㅜ",
+      "romanization": "u",
+      "type": "basic-horizontal",
+      "position": "bottom",
+      "name": "u",
+      "mnemonic": {
+        "image": "sunset",
+        "text": "Line below like sunset = Oo!"
+      },
+      "audioFile": "vowels/u.mp3",
+      "yCompound": "ㅠ"
+    },
+    {
+      "char": "ㅡ",
+      "romanization": "eu",
+      "type": "basic-horizontal",
+      "position": "bottom",
+      "name": "eu",
+      "mnemonic": {
+        "image": "tired",
+        "text": "Flat line = tired face, no energy → Eu"
+      },
+      "audioFile": "vowels/eu.mp3",
+      "yCompound": null
+    },
+    {
+      "char": "ㅣ",
+      "romanization": "i",
+      "type": "basic-vertical",
+      "position": "right",
+      "name": "i",
+      "mnemonic": {
+        "image": "tree",
+        "text": "Tall vertical line like a tree = Ee!"
+      },
+      "audioFile": "vowels/i.mp3",
+      "yCompound": null
+    },
+    {
+      "char": "ㅑ",
+      "romanization": "ya",
+      "type": "y-vertical",
+      "position": "right",
+      "name": "ya",
+      "mnemonic": {
+        "image": "y-add",
+        "text": "ㅏ + extra line = Ya!"
+      },
+      "audioFile": "vowels/ya.mp3",
+      "base": "ㅏ"
+    },
+    {
+      "char": "ㅕ",
+      "romanization": "yeo",
+      "type": "y-vertical",
+      "position": "right",
+      "name": "yeo",
+      "mnemonic": {
+        "image": "y-add",
+        "text": "ㅓ + extra line = Yeo!"
+      },
+      "audioFile": "vowels/yeo.mp3",
+      "base": "ㅓ"
+    },
+    {
+      "char": "ㅛ",
+      "romanization": "yo",
+      "type": "y-horizontal",
+      "position": "bottom",
+      "name": "yo",
+      "mnemonic": {
+        "image": "y-add",
+        "text": "ㅗ + extra line = Yo!"
+      },
+      "audioFile": "vowels/yo.mp3",
+      "base": "ㅗ"
+    },
+    {
+      "char": "ㅠ",
+      "romanization": "yu",
+      "type": "y-horizontal",
+      "position": "bottom",
+      "name": "yu",
+      "mnemonic": {
+        "image": "y-add",
+        "text": "ㅜ + extra line = Yu!"
+      },
+      "audioFile": "vowels/yu.mp3",
+      "base": "ㅜ"
+    },
+    {
+      "char": "ㅐ",
+      "romanization": "ae",
+      "type": "compound",
+      "position": "right",
+      "name": "ae",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅏ + ㅣ blended = Ae (like 'egg')"
+      },
+      "audioFile": "vowels/ae.mp3",
+      "components": [
+        "ㅏ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅔ",
+      "romanization": "e",
+      "type": "compound",
+      "position": "right",
+      "name": "e",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅓ + ㅣ blended = E (like 'bed')"
+      },
+      "audioFile": "vowels/e.mp3",
+      "components": [
+        "ㅓ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅒ",
+      "romanization": "yae",
+      "type": "compound",
+      "position": "right",
+      "name": "yae",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅑ + ㅣ = Yae"
+      },
+      "audioFile": "vowels/yae.mp3",
+      "components": [
+        "ㅑ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅖ",
+      "romanization": "ye",
+      "type": "compound",
+      "position": "right",
+      "name": "ye",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅕ + ㅣ = Ye (like 'yes')"
+      },
+      "audioFile": "vowels/ye.mp3",
+      "components": [
+        "ㅕ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅘ",
+      "romanization": "wa",
+      "type": "compound",
+      "position": "right",
+      "name": "wa",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅗ + ㅏ = Wa!"
+      },
+      "audioFile": "vowels/wa.mp3",
+      "components": [
+        "ㅗ",
+        "ㅏ"
+      ]
+    },
+    {
+      "char": "ㅙ",
+      "romanization": "wae",
+      "type": "compound",
+      "position": "right",
+      "name": "wae",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅗ + ㅐ = Wae"
+      },
+      "audioFile": "vowels/wae.mp3",
+      "components": [
+        "ㅗ",
+        "ㅐ"
+      ]
+    },
+    {
+      "char": "ㅚ",
+      "romanization": "oe",
+      "type": "compound",
+      "position": "right",
+      "name": "oe",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅗ + ㅣ = We/Oe"
+      },
+      "audioFile": "vowels/oe.mp3",
+      "components": [
+        "ㅗ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅝ",
+      "romanization": "wo",
+      "type": "compound",
+      "position": "right",
+      "name": "wo",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅜ + ㅓ = Wo"
+      },
+      "audioFile": "vowels/wo.mp3",
+      "components": [
+        "ㅜ",
+        "ㅓ"
+      ]
+    },
+    {
+      "char": "ㅞ",
+      "romanization": "we",
+      "type": "compound",
+      "position": "right",
+      "name": "we",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅜ + ㅔ = We"
+      },
+      "audioFile": "vowels/we.mp3",
+      "components": [
+        "ㅜ",
+        "ㅔ"
+      ]
+    },
+    {
+      "char": "ㅟ",
+      "romanization": "wi",
+      "type": "compound",
+      "position": "right",
+      "name": "wi",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅜ + ㅣ = Wi"
+      },
+      "audioFile": "vowels/wi.mp3",
+      "components": [
+        "ㅜ",
+        "ㅣ"
+      ]
+    },
+    {
+      "char": "ㅢ",
+      "romanization": "ui",
+      "type": "compound",
+      "position": "right",
+      "name": "ui",
+      "mnemonic": {
+        "image": "blend",
+        "text": "ㅡ + ㅣ = Ui (like 'we')"
+      },
+      "audioFile": "vowels/ui.mp3",
+      "components": [
+        "ㅡ",
+        "ㅣ"
+      ]
+    }
+  ],
+  "syllableRules": {
+    "vertical": {
+      "label": "Type B",
+      "description": "Vowel goes to the RIGHT of consonant",
+      "vowelTypes": [
+        "basic-vertical",
+        "y-vertical",
+        "compound"
+      ],
+      "diagram": "[ㄱㅏ] = 가"
+    },
+    "horizontal": {
+      "label": "Type A",
+      "description": "Vowel goes BELOW the consonant",
+      "vowelTypes": [
+        "basic-horizontal",
+        "y-horizontal"
+      ],
+      "diagram": "[ㄱ/ㅗ] = 고"
+    }
+  },
+  "sixSquareGrid": [
+    {
+      "label": "A1",
+      "type": "Vertical vowel, no 받침",
+      "example": "나",
+      "breakdown": "ㄴ+ㅏ",
+      "description": "Simple syllable"
+    },
+    {
+      "label": "B1",
+      "type": "Vertical vowel + 받침",
+      "example": "달",
+      "breakdown": "ㄷ+ㅏ+ㄹ",
+      "description": "With final consonant"
+    },
+    {
+      "label": "A2",
+      "type": "Horizontal vowel, no 받침",
+      "example": "무",
+      "breakdown": "ㅁ+ㅜ",
+      "description": "Simple syllable"
+    },
+    {
+      "label": "B2",
+      "type": "Horizontal vowel + 받침",
+      "example": "콩",
+      "breakdown": "ㅋ+ㅗ+ㅇ",
+      "description": "With final consonant"
+    },
+    {
+      "label": "A3",
+      "type": "Combined vowel, no 받침",
+      "example": "화",
+      "breakdown": "ㅎ+ㅘ",
+      "description": "Complex vowel"
+    },
+    {
+      "label": "B3",
+      "type": "Combined vowel + 받침",
+      "example": "왕",
+      "breakdown": "ㅇ+ㅘ+ㅇ",
+      "description": "Complex with 받침"
+    }
+  ],
+  "batchimConsonants": [
+    {
+      "char": "ㄱ",
+      "sound": "k"
+    },
+    {
+      "char": "ㄴ",
+      "sound": "n"
+    },
+    {
+      "char": "ㄷ",
+      "sound": "t"
+    },
+    {
+      "char": "ㄹ",
+      "sound": "l"
+    },
+    {
+      "char": "ㅁ",
+      "sound": "m"
+    },
+    {
+      "char": "ㅂ",
+      "sound": "p"
+    },
+    {
+      "char": "ㅇ",
+      "sound": "ng"
+    }
+  ],
+  "teachingTips": {
+    "whisperTest": {
+      "title": "The Whisper Test",
+      "description": "Try whispering the sound. If it feels natural, it's aspirated! Plain consonants feel awkward when whispered.",
+      "example": "Whisper ㅌ (t) - feels natural. Whisper ㄷ (d) - feels weird!"
+    },
+    "handPosition": {
+      "title": "Hand Position Trick",
+      "description": "Stretch your right hand out = ㅏ (ah!). Stretch your left hand out = ㅓ (uh!)",
+      "detail": "The branch direction on ㅣ tells you: right branch (ㅏ) or left branch (ㅓ)"
+    },
+    "aspirationPattern": {
+      "title": "Aspiration Pattern",
+      "description": "Basic consonant + one extra stroke = aspirated version (more air!)",
+      "pairs": [
+        "ㄱ→ㅋ",
+        "ㄷ→ㅌ",
+        "ㅂ→ㅍ",
+        "ㅈ→ㅊ"
+      ]
+    },
+    "doublePattern": {
+      "title": "Double (Tense) Consonants",
+      "description": "Write the consonant twice = tense version (tight throat, no air!)",
+      "pairs": [
+        "ㄱ→ㄲ",
+        "ㄷ→ㄸ",
+        "ㅂ→ㅃ",
+        "ㅅ→ㅆ",
+        "ㅈ→ㅉ"
+      ]
+    },
+    "yPattern": {
+      "title": "Y-Sound Pattern",
+      "description": "Basic vowel + extra line = Y prefix added!",
+      "pairs": [
+        "ㅏ→ㅑ",
+        "ㅓ→ㅕ",
+        "ㅗ→ㅛ",
+        "ㅜ→ㅠ"
+      ]
+    },
+    "errorNormalization": {
+      "title": "Don't worry!",
+      "messages": [
+        "95% of Koreans can't tell ㅐ from ㅔ either!",
+        "Even native speakers mix up ㄲ and ㄱ sometimes!",
+        "Pronunciation improves naturally with listening. Keep going!",
+        "You're doing better than you think!"
+      ]
+    }
+  },
+  "words": {
+    "greetings": [
+      {
+        "korean": "안녕",
+        "romanization": "an-nyeong",
+        "english": "Hello (casual)",
+        "syllables": [
+          "안",
+          "녕"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅕ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "감사",
+        "romanization": "gam-sa",
+        "english": "Thanks",
+        "syllables": [
+          "감",
+          "사"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "네",
+        "romanization": "ne",
+        "english": "Yes",
+        "syllables": [
+          "네"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅔ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "아니",
+        "romanization": "a-ni",
+        "english": "No",
+        "syllables": [
+          "아",
+          "니"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "안녕하세요",
+        "romanization": "an-nyeong-ha-se-yo",
+        "english": "Hello (polite)",
+        "syllables": [
+          "안",
+          "녕",
+          "하",
+          "세",
+          "요"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅕ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅔ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅛ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "감사합니다",
+        "romanization": "gam-sa-ham-ni-da",
+        "english": "Thank you (formal)",
+        "syllables": [
+          "감",
+          "사",
+          "합",
+          "니",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㅂ"
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "미안",
+        "romanization": "mi-an",
+        "english": "Sorry (casual)",
+        "syllables": [
+          "미",
+          "안"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "괜찮아",
+        "romanization": "gwaen-chan-a",
+        "english": "It's okay",
+        "syllables": [
+          "괜",
+          "찮",
+          "아"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅙ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅏ",
+            "final": "ㄶ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "좋아",
+        "romanization": "jo-a",
+        "english": "Good / I like it",
+        "syllables": [
+          "좋",
+          "아"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅗ",
+            "final": "ㅎ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "싫어",
+        "romanization": "sir-eo",
+        "english": "I don't like it",
+        "syllables": [
+          "싫",
+          "어"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅣ",
+            "final": "ㅀ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "잘자",
+        "romanization": "jal-ja",
+        "english": "Good night",
+        "syllables": [
+          "잘",
+          "자"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "어서오세요",
+        "romanization": "eo-seo-o-se-yo",
+        "english": "Welcome",
+        "syllables": [
+          "어",
+          "서",
+          "오",
+          "세",
+          "요"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅔ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅛ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "축하",
+        "romanization": "chuk-ha",
+        "english": "Congratulations",
+        "syllables": [
+          "축",
+          "하"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅜ",
+            "final": "ㄱ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "실례",
+        "romanization": "sil-lye",
+        "english": "Excuse me",
+        "syllables": [
+          "실",
+          "례"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅣ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅖ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "여보세요",
+        "romanization": "yeo-bo-se-yo",
+        "english": "Hello (phone)",
+        "syllables": [
+          "여",
+          "보",
+          "세",
+          "요"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅔ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅛ",
+            "final": null
+          }
+        ]
+      }
+    ],
+    "family": [
+      {
+        "korean": "아버지",
+        "romanization": "a-beo-ji",
+        "english": "Father",
+        "syllables": [
+          "아",
+          "버",
+          "지"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "어머니",
+        "romanization": "eo-meo-ni",
+        "english": "Mother",
+        "syllables": [
+          "어",
+          "머",
+          "니"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "친구",
+        "romanization": "chin-gu",
+        "english": "Friend",
+        "syllables": [
+          "친",
+          "구"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅣ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅜ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "선생님",
+        "romanization": "seon-saeng-nim",
+        "english": "Teacher",
+        "syllables": [
+          "선",
+          "생",
+          "님"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅐ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "형",
+        "romanization": "hyeong",
+        "english": "Older brother (male's)",
+        "syllables": [
+          "형"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅕ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "누나",
+        "romanization": "nu-na",
+        "english": "Older sister (male's)",
+        "syllables": [
+          "누",
+          "나"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅜ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "오빠",
+        "romanization": "o-ppa",
+        "english": "Older brother (female's)",
+        "syllables": [
+          "오",
+          "빠"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅃ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "언니",
+        "romanization": "eon-ni",
+        "english": "Older sister (female's)",
+        "syllables": [
+          "언",
+          "니"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "동생",
+        "romanization": "dong-saeng",
+        "english": "Younger sibling",
+        "syllables": [
+          "동",
+          "생"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅗ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅐ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "할머니",
+        "romanization": "hal-meo-ni",
+        "english": "Grandmother",
+        "syllables": [
+          "할",
+          "머",
+          "니"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "할아버지",
+        "romanization": "hal-a-beo-ji",
+        "english": "Grandfather",
+        "syllables": [
+          "할",
+          "아",
+          "버",
+          "지"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "아기",
+        "romanization": "a-gi",
+        "english": "Baby",
+        "syllables": [
+          "아",
+          "기"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "사람",
+        "romanization": "sa-ram",
+        "english": "Person",
+        "syllables": [
+          "사",
+          "람"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "여자",
+        "romanization": "yeo-ja",
+        "english": "Woman",
+        "syllables": [
+          "여",
+          "자"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "남자",
+        "romanization": "nam-ja",
+        "english": "Man",
+        "syllables": [
+          "남",
+          "자"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      }
+    ],
+    "food": [
+      {
+        "korean": "밥",
+        "romanization": "bap",
+        "english": "Rice / Meal",
+        "syllables": [
+          "밥"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "물",
+        "romanization": "mul",
+        "english": "Water",
+        "syllables": [
+          "물"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅜ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "김밥",
+        "romanization": "gim-bap",
+        "english": "Kimbap",
+        "syllables": [
+          "김",
+          "밥"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "라면",
+        "romanization": "ra-myeon",
+        "english": "Ramen",
+        "syllables": [
+          "라",
+          "면"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅕ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "치킨",
+        "romanization": "chi-kin",
+        "english": "Chicken",
+        "syllables": [
+          "치",
+          "킨"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㅋ",
+            "vowel": "ㅣ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "고기",
+        "romanization": "go-gi",
+        "english": "Meat",
+        "syllables": [
+          "고",
+          "기"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "빵",
+        "romanization": "ppang",
+        "english": "Bread",
+        "syllables": [
+          "빵"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅃ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "과일",
+        "romanization": "gwa-il",
+        "english": "Fruit",
+        "syllables": [
+          "과",
+          "일"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅘ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "사과",
+        "romanization": "sa-gwa",
+        "english": "Apple",
+        "syllables": [
+          "사",
+          "과"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅘ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "바나나",
+        "romanization": "ba-na-na",
+        "english": "Banana",
+        "syllables": [
+          "바",
+          "나",
+          "나"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "우유",
+        "romanization": "u-yu",
+        "english": "Milk",
+        "syllables": [
+          "우",
+          "유"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅜ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅠ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "커피",
+        "romanization": "keo-pi",
+        "english": "Coffee",
+        "syllables": [
+          "커",
+          "피"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅋ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅍ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "차",
+        "romanization": "cha",
+        "english": "Tea",
+        "syllables": [
+          "차"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "국",
+        "romanization": "guk",
+        "english": "Soup",
+        "syllables": [
+          "국"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅜ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "김치",
+        "romanization": "gim-chi",
+        "english": "Kimchi",
+        "syllables": [
+          "김",
+          "치"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "떡",
+        "romanization": "tteok",
+        "english": "Rice cake",
+        "syllables": [
+          "떡"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄸ",
+            "vowel": "ㅓ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "계란",
+        "romanization": "gye-ran",
+        "english": "Egg",
+        "syllables": [
+          "계",
+          "란"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅖ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "야채",
+        "romanization": "ya-chae",
+        "english": "Vegetables",
+        "syllables": [
+          "야",
+          "채"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅑ",
+            "final": null
+          },
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅐ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "생선",
+        "romanization": "saeng-seon",
+        "english": "Fish (food)",
+        "syllables": [
+          "생",
+          "선"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅐ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "주스",
+        "romanization": "ju-seu",
+        "english": "Juice",
+        "syllables": [
+          "주",
+          "스"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅜ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅡ",
+            "final": null
+          }
+        ]
+      }
+    ],
+    "places": [
+      {
+        "korean": "한국",
+        "romanization": "han-guk",
+        "english": "Korea",
+        "syllables": [
+          "한",
+          "국"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅜ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "학교",
+        "romanization": "hak-gyo",
+        "english": "School",
+        "syllables": [
+          "학",
+          "교"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㄱ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅛ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "집",
+        "romanization": "jip",
+        "english": "House",
+        "syllables": [
+          "집"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "가게",
+        "romanization": "ga-ge",
+        "english": "Store",
+        "syllables": [
+          "가",
+          "게"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅔ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "병원",
+        "romanization": "byeong-won",
+        "english": "Hospital",
+        "syllables": [
+          "병",
+          "원"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅕ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅝ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "공원",
+        "romanization": "gong-won",
+        "english": "Park",
+        "syllables": [
+          "공",
+          "원"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅝ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "도서관",
+        "romanization": "do-seo-gwan",
+        "english": "Library",
+        "syllables": [
+          "도",
+          "서",
+          "관"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅘ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "식당",
+        "romanization": "sik-dang",
+        "english": "Restaurant",
+        "syllables": [
+          "식",
+          "당"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅣ",
+            "final": "ㄱ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "은행",
+        "romanization": "eun-haeng",
+        "english": "Bank",
+        "syllables": [
+          "은",
+          "행"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅡ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅐ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "마트",
+        "romanization": "ma-teu",
+        "english": "Mart",
+        "syllables": [
+          "마",
+          "트"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅌ",
+            "vowel": "ㅡ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "역",
+        "romanization": "yeok",
+        "english": "Station",
+        "syllables": [
+          "역"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "공항",
+        "romanization": "gong-hang",
+        "english": "Airport",
+        "syllables": [
+          "공",
+          "항"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "호텔",
+        "romanization": "ho-tel",
+        "english": "Hotel",
+        "syllables": [
+          "호",
+          "텔"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅌ",
+            "vowel": "ㅔ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "바다",
+        "romanization": "ba-da",
+        "english": "Sea",
+        "syllables": [
+          "바",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "산",
+        "romanization": "san",
+        "english": "Mountain",
+        "syllables": [
+          "산"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": "ㄴ"
+          }
+        ]
+      }
+    ],
+    "body": [
+      {
+        "korean": "코",
+        "romanization": "ko",
+        "english": "Nose",
+        "syllables": [
+          "코"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅋ",
+            "vowel": "ㅗ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "손",
+        "romanization": "son",
+        "english": "Hand",
+        "syllables": [
+          "손"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅗ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "눈",
+        "romanization": "nun",
+        "english": "Eye",
+        "syllables": [
+          "눈"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅜ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "귀",
+        "romanization": "gwi",
+        "english": "Ear",
+        "syllables": [
+          "귀"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅟ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "입",
+        "romanization": "ip",
+        "english": "Mouth",
+        "syllables": [
+          "입"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "머리",
+        "romanization": "meo-ri",
+        "english": "Head",
+        "syllables": [
+          "머",
+          "리"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "발",
+        "romanization": "bal",
+        "english": "Foot",
+        "syllables": [
+          "발"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "다리",
+        "romanization": "da-ri",
+        "english": "Leg",
+        "syllables": [
+          "다",
+          "리"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "팔",
+        "romanization": "pal",
+        "english": "Arm",
+        "syllables": [
+          "팔"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅍ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "배",
+        "romanization": "bae",
+        "english": "Belly",
+        "syllables": [
+          "배"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅐ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "얼굴",
+        "romanization": "eol-gul",
+        "english": "Face",
+        "syllables": [
+          "얼",
+          "굴"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅜ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "목",
+        "romanization": "mok",
+        "english": "Neck",
+        "syllables": [
+          "목"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅗ",
+            "final": "ㄱ"
+          }
+        ]
+      }
+    ],
+    "nature": [
+      {
+        "korean": "나무",
+        "romanization": "na-mu",
+        "english": "Tree",
+        "syllables": [
+          "나",
+          "무"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅜ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "해",
+        "romanization": "hae",
+        "english": "Sun",
+        "syllables": [
+          "해"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅐ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "봄",
+        "romanization": "bom",
+        "english": "Spring",
+        "syllables": [
+          "봄"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅗ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "여름",
+        "romanization": "yeo-reum",
+        "english": "Summer",
+        "syllables": [
+          "여",
+          "름"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅡ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "가을",
+        "romanization": "ga-eul",
+        "english": "Autumn",
+        "syllables": [
+          "가",
+          "을"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅡ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "겨울",
+        "romanization": "gyeo-ul",
+        "english": "Winter",
+        "syllables": [
+          "겨",
+          "울"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅜ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "꽃",
+        "romanization": "kkot",
+        "english": "Flower",
+        "syllables": [
+          "꽃"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄲ",
+            "vowel": "ㅗ",
+            "final": "ㅊ"
+          }
+        ]
+      },
+      {
+        "korean": "하늘",
+        "romanization": "ha-neul",
+        "english": "Sky",
+        "syllables": [
+          "하",
+          "늘"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅡ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "비",
+        "romanization": "bi",
+        "english": "Rain",
+        "syllables": [
+          "비"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "바람",
+        "romanization": "ba-ram",
+        "english": "Wind",
+        "syllables": [
+          "바",
+          "람"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㅁ"
+          }
+        ]
+      }
+    ],
+    "numbers": [
+      {
+        "korean": "하나",
+        "romanization": "ha-na",
+        "english": "One",
+        "syllables": [
+          "하",
+          "나"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "둘",
+        "romanization": "dul",
+        "english": "Two",
+        "syllables": [
+          "둘"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅜ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "셋",
+        "romanization": "set",
+        "english": "Three",
+        "syllables": [
+          "셋"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅔ",
+            "final": "ㅅ"
+          }
+        ]
+      },
+      {
+        "korean": "넷",
+        "romanization": "net",
+        "english": "Four",
+        "syllables": [
+          "넷"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅔ",
+            "final": "ㅅ"
+          }
+        ]
+      },
+      {
+        "korean": "다섯",
+        "romanization": "da-seot",
+        "english": "Five",
+        "syllables": [
+          "다",
+          "섯"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": "ㅅ"
+          }
+        ]
+      },
+      {
+        "korean": "여섯",
+        "romanization": "yeo-seot",
+        "english": "Six",
+        "syllables": [
+          "여",
+          "섯"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": "ㅅ"
+          }
+        ]
+      },
+      {
+        "korean": "일곱",
+        "romanization": "il-gop",
+        "english": "Seven",
+        "syllables": [
+          "일",
+          "곱"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "여덟",
+        "romanization": "yeo-deol",
+        "english": "Eight",
+        "syllables": [
+          "여",
+          "덟"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅓ",
+            "final": "ㄼ"
+          }
+        ]
+      },
+      {
+        "korean": "아홉",
+        "romanization": "a-hop",
+        "english": "Nine",
+        "syllables": [
+          "아",
+          "홉"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅗ",
+            "final": "ㅂ"
+          }
+        ]
+      },
+      {
+        "korean": "열",
+        "romanization": "yeol",
+        "english": "Ten",
+        "syllables": [
+          "열"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": "ㄹ"
+          }
+        ]
+      }
+    ],
+    "animals": [
+      {
+        "korean": "개",
+        "romanization": "gae",
+        "english": "Dog",
+        "syllables": [
+          "개"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅐ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "고양이",
+        "romanization": "go-yang-i",
+        "english": "Cat",
+        "syllables": [
+          "고",
+          "양",
+          "이"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅑ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "새",
+        "romanization": "sae",
+        "english": "Bird",
+        "syllables": [
+          "새"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅐ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "물고기",
+        "romanization": "mul-go-gi",
+        "english": "Fish",
+        "syllables": [
+          "물",
+          "고",
+          "기"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅜ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "소",
+        "romanization": "so",
+        "english": "Cow",
+        "syllables": [
+          "소"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅗ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "돼지",
+        "romanization": "dwae-ji",
+        "english": "Pig",
+        "syllables": [
+          "돼",
+          "지"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅙ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "닭",
+        "romanization": "dak",
+        "english": "Chicken (animal)",
+        "syllables": [
+          "닭"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": "ㄺ"
+          }
+        ]
+      },
+      {
+        "korean": "말",
+        "romanization": "mal",
+        "english": "Horse",
+        "syllables": [
+          "말"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "토끼",
+        "romanization": "to-kki",
+        "english": "Rabbit",
+        "syllables": [
+          "토",
+          "끼"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅌ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄲ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "곰",
+        "romanization": "gom",
+        "english": "Bear",
+        "syllables": [
+          "곰"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅗ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "호랑이",
+        "romanization": "ho-rang-i",
+        "english": "Tiger",
+        "syllables": [
+          "호",
+          "랑",
+          "이"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "사자",
+        "romanization": "sa-ja",
+        "english": "Lion",
+        "syllables": [
+          "사",
+          "자"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "원숭이",
+        "romanization": "won-sung-i",
+        "english": "Monkey",
+        "syllables": [
+          "원",
+          "숭",
+          "이"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅝ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅜ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "쥐",
+        "romanization": "jwi",
+        "english": "Mouse",
+        "syllables": [
+          "쥐"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅟ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "강아지",
+        "romanization": "gang-a-ji",
+        "english": "Puppy",
+        "syllables": [
+          "강",
+          "아",
+          "지"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      }
+    ],
+    "colors": [
+      {
+        "korean": "빨강",
+        "romanization": "ppal-gang",
+        "english": "Red",
+        "syllables": [
+          "빨",
+          "강"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅃ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "파랑",
+        "romanization": "pa-rang",
+        "english": "Blue",
+        "syllables": [
+          "파",
+          "랑"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅍ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "노랑",
+        "romanization": "no-rang",
+        "english": "Yellow",
+        "syllables": [
+          "노",
+          "랑"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "초록",
+        "romanization": "cho-rok",
+        "english": "Green",
+        "syllables": [
+          "초",
+          "록"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅗ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "하양",
+        "romanization": "ha-yang",
+        "english": "White",
+        "syllables": [
+          "하",
+          "양"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅑ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "검정",
+        "romanization": "geom-jeong",
+        "english": "Black",
+        "syllables": [
+          "검",
+          "정"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅓ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅓ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "분홍",
+        "romanization": "bun-hong",
+        "english": "Pink",
+        "syllables": [
+          "분",
+          "홍"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅜ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅗ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "보라",
+        "romanization": "bo-ra",
+        "english": "Purple",
+        "syllables": [
+          "보",
+          "라"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄹ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "주황",
+        "romanization": "ju-hwang",
+        "english": "Orange",
+        "syllables": [
+          "주",
+          "황"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅜ",
+            "final": null
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅘ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "갈색",
+        "romanization": "gal-saek",
+        "english": "Brown",
+        "syllables": [
+          "갈",
+          "색"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅐ",
+            "final": "ㄱ"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "korean": "가다",
+        "romanization": "ga-da",
+        "english": "To go",
+        "syllables": [
+          "가",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "오다",
+        "romanization": "o-da",
+        "english": "To come",
+        "syllables": [
+          "오",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "먹다",
+        "romanization": "meok-da",
+        "english": "To eat",
+        "syllables": [
+          "먹",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅓ",
+            "final": "ㄱ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "마시다",
+        "romanization": "ma-si-da",
+        "english": "To drink",
+        "syllables": [
+          "마",
+          "시",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "자다",
+        "romanization": "ja-da",
+        "english": "To sleep",
+        "syllables": [
+          "자",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "앉다",
+        "romanization": "an-da",
+        "english": "To sit",
+        "syllables": [
+          "앉",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": "ㄵ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "서다",
+        "romanization": "seo-da",
+        "english": "To stand",
+        "syllables": [
+          "서",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "걷다",
+        "romanization": "geot-da",
+        "english": "To walk",
+        "syllables": [
+          "걷",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅓ",
+            "final": "ㄷ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "보다",
+        "romanization": "bo-da",
+        "english": "To see",
+        "syllables": [
+          "보",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "듣다",
+        "romanization": "deut-da",
+        "english": "To listen",
+        "syllables": [
+          "듣",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅡ",
+            "final": "ㄷ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "읽다",
+        "romanization": "ik-da",
+        "english": "To read",
+        "syllables": [
+          "읽",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": "ㄺ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "쓰다",
+        "romanization": "sseu-da",
+        "english": "To write",
+        "syllables": [
+          "쓰",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅆ",
+            "vowel": "ㅡ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "말하다",
+        "romanization": "mal-ha-da",
+        "english": "To speak",
+        "syllables": [
+          "말",
+          "하",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "배우다",
+        "romanization": "bae-u-da",
+        "english": "To learn",
+        "syllables": [
+          "배",
+          "우",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅐ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅜ",
+            "final": null
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "놀다",
+        "romanization": "nol-da",
+        "english": "To play",
+        "syllables": [
+          "놀",
+          "다"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅗ",
+            "final": "ㄹ"
+          },
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      }
+    ],
+    "time": [
+      {
+        "korean": "오늘",
+        "romanization": "o-neul",
+        "english": "Today",
+        "syllables": [
+          "오",
+          "늘"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅗ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅡ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "내일",
+        "romanization": "nae-il",
+        "english": "Tomorrow",
+        "syllables": [
+          "내",
+          "일"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅐ",
+            "final": null
+          },
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅣ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "어제",
+        "romanization": "eo-je",
+        "english": "Yesterday",
+        "syllables": [
+          "어",
+          "제"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅔ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "아침",
+        "romanization": "a-chim",
+        "english": "Morning",
+        "syllables": [
+          "아",
+          "침"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅣ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "저녁",
+        "romanization": "jeo-nyeok",
+        "english": "Evening",
+        "syllables": [
+          "저",
+          "녁"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅕ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "지금",
+        "romanization": "ji-geum",
+        "english": "Now",
+        "syllables": [
+          "지",
+          "금"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅡ",
+            "final": "ㅁ"
+          }
+        ]
+      },
+      {
+        "korean": "나중",
+        "romanization": "na-jung",
+        "english": "Later",
+        "syllables": [
+          "나",
+          "중"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄴ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅜ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "항상",
+        "romanization": "hang-sang",
+        "english": "Always",
+        "syllables": [
+          "항",
+          "상"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      }
+    ],
+    "things": [
+      {
+        "korean": "책",
+        "romanization": "chaek",
+        "english": "Book",
+        "syllables": [
+          "책"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅐ",
+            "final": "ㄱ"
+          }
+        ]
+      },
+      {
+        "korean": "연필",
+        "romanization": "yeon-pil",
+        "english": "Pencil",
+        "syllables": [
+          "연",
+          "필"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅕ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅍ",
+            "vowel": "ㅣ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "전화",
+        "romanization": "jeon-hwa",
+        "english": "Phone",
+        "syllables": [
+          "전",
+          "화"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅓ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅘ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "컴퓨터",
+        "romanization": "keom-pyu-teo",
+        "english": "Computer",
+        "syllables": [
+          "컴",
+          "퓨",
+          "터"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅋ",
+            "vowel": "ㅓ",
+            "final": "ㅁ"
+          },
+          {
+            "initial": "ㅍ",
+            "vowel": "ㅠ",
+            "final": null
+          },
+          {
+            "initial": "ㅌ",
+            "vowel": "ㅓ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "옷",
+        "romanization": "ot",
+        "english": "Clothes",
+        "syllables": [
+          "옷"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅗ",
+            "final": "ㅅ"
+          }
+        ]
+      },
+      {
+        "korean": "신발",
+        "romanization": "sin-bal",
+        "english": "Shoes",
+        "syllables": [
+          "신",
+          "발"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅣ",
+            "final": "ㄴ"
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": "ㄹ"
+          }
+        ]
+      },
+      {
+        "korean": "가방",
+        "romanization": "ga-bang",
+        "english": "Bag",
+        "syllables": [
+          "가",
+          "방"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅏ",
+            "final": null
+          },
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "의자",
+        "romanization": "ui-ja",
+        "english": "Chair",
+        "syllables": [
+          "의",
+          "자"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅇ",
+            "vowel": "ㅢ",
+            "final": null
+          },
+          {
+            "initial": "ㅈ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "책상",
+        "romanization": "chaek-sang",
+        "english": "Desk",
+        "syllables": [
+          "책",
+          "상"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅐ",
+            "final": "ㄱ"
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          }
+        ]
+      },
+      {
+        "korean": "창문",
+        "romanization": "chang-mun",
+        "english": "Window",
+        "syllables": [
+          "창",
+          "문"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅏ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅜ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "문",
+        "romanization": "mun",
+        "english": "Door",
+        "syllables": [
+          "문"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅁ",
+            "vowel": "ㅜ",
+            "final": "ㄴ"
+          }
+        ]
+      },
+      {
+        "korean": "차",
+        "romanization": "cha",
+        "english": "Car",
+        "syllables": [
+          "차"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅊ",
+            "vowel": "ㅏ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "버스",
+        "romanization": "beo-seu",
+        "english": "Bus",
+        "syllables": [
+          "버",
+          "스"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅓ",
+            "final": null
+          },
+          {
+            "initial": "ㅅ",
+            "vowel": "ㅡ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "비행기",
+        "romanization": "bi-haeng-gi",
+        "english": "Airplane",
+        "syllables": [
+          "비",
+          "행",
+          "기"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㅂ",
+            "vowel": "ㅣ",
+            "final": null
+          },
+          {
+            "initial": "ㅎ",
+            "vowel": "ㅐ",
+            "final": "ㅇ"
+          },
+          {
+            "initial": "ㄱ",
+            "vowel": "ㅣ",
+            "final": null
+          }
+        ]
+      },
+      {
+        "korean": "돈",
+        "romanization": "don",
+        "english": "Money",
+        "syllables": [
+          "돈"
+        ],
+        "breakdown": [
+          {
+            "initial": "ㄷ",
+            "vowel": "ㅗ",
+            "final": "ㄴ"
+          }
+        ]
+      }
+    ]
+  }
+}

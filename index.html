@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangul Explorer - Korean Learning Tools</title>
+    <link rel="stylesheet" href="css/hangul.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <div class="header-inner">
+            <div class="header-title">
+                <h1>Hangul Explorer</h1>
+                <p>Learn Korean letters interactively</p>
+            </div>
+            <div class="header-actions">
+                <a href="https://g4jy.github.io/basic-sentence-builder-puzzle/app.html" class="header-btn">Back to Tools</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Navigation -->
+    <nav class="section-nav">
+        <div class="nav-inner">
+            <button class="nav-btn active" data-section="consonants">Consonants</button>
+            <button class="nav-btn" data-section="vowels">Vowels</button>
+            <button class="nav-btn" data-section="builder">Syllable Builder</button>
+            <button class="nav-btn" data-section="words">Word Discovery</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Section 1: Consonants -->
+        <div id="consonants" class="section active">
+            <div class="section-header">
+                <h2>Korean Consonants</h2>
+                <p>Click any consonant to hear its sound. Hover for learning tips!</p>
+            </div>
+            <div id="consonant-grid">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+
+        <!-- Section 2: Vowels -->
+        <div id="vowels" class="section">
+            <div class="section-header">
+                <h2>Korean Vowels</h2>
+                <p>Click any vowel to hear it. Vertical vowels go RIGHT, horizontal vowels go BELOW.</p>
+            </div>
+            <div id="vowel-grid">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+
+        <!-- Section 3: Syllable Builder -->
+        <div id="builder" class="section">
+            <div id="builder-section">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+
+        <!-- Section 4: Word Discovery -->
+        <div id="words" class="section">
+            <div id="word-section">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/hangul.js"></script>
+    <script>
+    // Validate "Back to Tools" link - hide if target doesn't exist (e.g., local testing)
+    (function() {
+        const backLink = document.querySelector('.header-btn[href]');
+        if (backLink) {
+            fetch(backLink.getAttribute('href'), { method: 'HEAD' })
+                .then(r => { if (!r.ok) backLink.style.display = 'none'; })
+                .catch(() => backLink.style.display = 'none');
+        }
+    })();
+    </script>
+</body>
+</html>
