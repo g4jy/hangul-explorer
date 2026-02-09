@@ -12,6 +12,9 @@ let selectedConsonant = null;
 let selectedVowel = null;
 let currentSection = 'consonants';
 let currentWordCategory = 'greetings';
+let wordCardIdx = 0;
+let wordFlipped = false;
+let shuffledWords = null;
 let synth = window.speechSynthesis;
 let koreanVoice = null;
 let currentAudio = null;
@@ -736,58 +739,103 @@ function renderWordDiscovery() {
     container.innerHTML = `
         <div class="section-header">
             <h2>Word Discovery</h2>
-            <p>Tap each syllable to hear it, then tap the play button for the whole word!</p>
+            <p>Tap the card to reveal the meaning, use arrows to navigate!</p>
         </div>
         ${catHtml}
         <div class="word-list" id="word-list"></div>
         <div class="encouragement" id="encouragement"></div>`;
 
-    renderWordCards();
+    renderWordFlashcards();
     showRandomEncouragement();
 }
 
 function switchWordCategory(category) {
     currentWordCategory = category;
+    wordCardIdx = 0;
+    wordFlipped = false;
+    shuffledWords = null;
     document.querySelectorAll('.cat-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.category === category);
     });
-    renderWordCards();
+    renderWordFlashcards();
 }
 
-function renderWordCards() {
-    const list = document.getElementById('word-list');
-    if (!list || !hangulData) return;
+function renderWordFlashcards() {
+    const container = document.getElementById('word-list');
+    if (!container || !hangulData) return;
 
-    const words = hangulData.words[currentWordCategory] || [];
+    const words = shuffledWords || hangulData.words[currentWordCategory] || [];
+    if (words.length === 0) { container.innerHTML = ''; return; }
+    if (wordCardIdx >= words.length) wordCardIdx = 0;
 
-    list.innerHTML = words.map((word, i) => {
-        const syllableChips = word.syllables.map((syl, j) => {
-            const bd = word.breakdown[j];
-            const parts = bd ? `${bd.initial}+${bd.vowel}${bd.final ? '+' + bd.final : ''}` : '';
-            return `
-                <div class="syllable-chip" onclick="playSyllableChip(this, '${syl}')" title="${parts}">
-                    <span class="syllable-char">${syl}</span>
-                    <span class="syllable-parts">${parts}</span>
-                </div>`;
-        }).join('<span class="syllable-plus">+</span>');
+    const word = words[wordCardIdx];
+    wordFlipped = false;
 
-        return `
-            <div class="word-card">
-                <div class="word-card-header">
-                    <div>
-                        <div class="word-korean">${word.korean}</div>
-                        <div class="word-romanization">${word.romanization}</div>
-                        <div class="word-english">${word.english}</div>
+    // Build syllable chips for the back
+    const syllableChips = word.syllables.map((syl, j) => {
+        const bd = word.breakdown[j];
+        const parts = bd ? `${bd.initial}+${bd.vowel}${bd.final ? '+' + bd.final : ''}` : '';
+        return `<div class="syllable-chip" onclick="event.stopPropagation(); playSyllableChip(this, '${syl}')" title="${parts}">
+            <span class="syllable-char">${syl}</span>
+            <span class="syllable-parts">${parts}</span>
+        </div>`;
+    }).join('<span class="syllable-plus">+</span>');
+
+    container.innerHTML = `
+        <div class="word-flashcard-area">
+            <div class="word-flashcard" id="word-flashcard" onclick="flipWordCard()">
+                <div class="word-flashcard-inner" id="word-flashcard-inner">
+                    <div class="word-flashcard-front">
+                        <div class="wf-korean">${word.korean}</div>
+                        <button class="wf-play-btn" onclick="event.stopPropagation(); playWord('${word.korean}')" title="Play sound">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><polygon points="5,3 19,12 5,21" fill="white"/></svg>
+                        </button>
                     </div>
-                    <button class="word-play-btn" onclick="playWord('${word.korean}')" title="Play whole word">
-                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-                    </button>
+                    <div class="word-flashcard-back">
+                        <div class="wf-english">${word.english}</div>
+                        <div class="wf-romanization">${word.romanization}</div>
+                        <div class="wf-syllables">${syllableChips}</div>
+                    </div>
                 </div>
-                <div class="syllable-breakdown">
-                    ${syllableChips}
-                </div>
-            </div>`;
-    }).join('');
+            </div>
+            <div class="word-fc-controls">
+                <button class="wf-nav-btn" onclick="prevWordCard()" title="Previous">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><polyline points="15,18 9,12 15,6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <span class="wf-progress">${wordCardIdx + 1} / ${words.length}</span>
+                <button class="wf-nav-btn" onclick="nextWordCard()" title="Next">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><polyline points="9,6 15,12 9,18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+            <div class="word-fc-actions">
+                <button class="wf-action-btn" onclick="shuffleWords()">Shuffle</button>
+            </div>
+        </div>`;
+}
+
+function flipWordCard() {
+    wordFlipped = !wordFlipped;
+    const inner = document.getElementById('word-flashcard-inner');
+    if (inner) inner.classList.toggle('flipped', wordFlipped);
+}
+
+function nextWordCard() {
+    const words = shuffledWords || hangulData.words[currentWordCategory] || [];
+    wordCardIdx = (wordCardIdx + 1) % words.length;
+    renderWordFlashcards();
+}
+
+function prevWordCard() {
+    const words = shuffledWords || hangulData.words[currentWordCategory] || [];
+    wordCardIdx = (wordCardIdx - 1 + words.length) % words.length;
+    renderWordFlashcards();
+}
+
+function shuffleWords() {
+    const original = hangulData.words[currentWordCategory] || [];
+    shuffledWords = [...original].sort(() => Math.random() - 0.5);
+    wordCardIdx = 0;
+    renderWordFlashcards();
 }
 
 function playSyllableChip(element, syllable) {
