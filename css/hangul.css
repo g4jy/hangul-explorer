@@ -67,6 +67,88 @@
 }
 
 /* ============================================
+   Landing Page
+   ============================================ */
+
+.landing-page {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #5046e5 0%, #7c6cff 50%, #a78bfa 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+body.show-landing .landing-page {
+    display: flex;
+}
+
+body.show-landing .page-header,
+body.show-landing .section-nav,
+body.show-landing .main-content {
+    display: none;
+}
+
+.landing-content {
+    animation: landingIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes landingIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.landing-icon {
+    font-family: var(--font-korean);
+    font-size: 3rem;
+    font-weight: 900;
+    opacity: 0.7;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+}
+
+.landing-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.landing-subtitle {
+    font-size: 1.15rem;
+    opacity: 0.85;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.landing-start-btn {
+    background: white;
+    color: var(--accent-primary);
+    border: none;
+    padding: 16px 48px;
+    border-radius: var(--radius-full);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-ui);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.landing-start-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.landing-start-btn:active {
+    transform: scale(0.97);
+}
+
+/* ============================================
    Reset & Base
    ============================================ */
 
@@ -1077,6 +1159,124 @@ body {
     color: var(--text-muted);
     font-size: 0.85rem;
     font-weight: 300;
+}
+
+/* ============================================
+   Word View Toggle
+   ============================================ */
+
+.word-view-toggle {
+    display: flex;
+    gap: 4px;
+    background: var(--bg-input);
+    border-radius: var(--radius-full);
+    padding: 4px;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.wv-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: var(--radius-full);
+    background: transparent;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-muted);
+    font-family: var(--font-ui);
+}
+
+.wv-btn:hover {
+    color: var(--text-secondary);
+}
+
+.wv-btn.active {
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ============================================
+   Word Grid View
+   ============================================ */
+
+.word-grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.word-grid-card {
+    background: var(--bg-card);
+    border: var(--border-default);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.word-grid-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-border);
+}
+
+.word-grid-card:active {
+    transform: scale(0.97);
+}
+
+.wg-korean {
+    font-family: var(--font-korean);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.wg-english {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.wg-rom {
+    font-size: 0.75rem;
+    color: var(--accent-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.wg-breakdown {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.wg-chip {
+    background: var(--bg-input);
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-sm);
+    padding: 3px 8px;
+    font-family: var(--font-korean);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.wg-chip:hover {
+    border-color: var(--accent-primary);
+    background: var(--accent-bg);
+}
+
+.wg-chip small {
+    font-family: var(--font-ui);
+    font-size: 0.55rem;
+    color: var(--text-muted);
+    margin-left: 3px;
 }
 
 /* ============================================

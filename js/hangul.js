@@ -15,6 +15,8 @@ let currentWordCategory = 'greetings';
 let wordCardIdx = 0;
 let wordFlipped = false;
 let shuffledWords = null;
+let wordViewMode = 'grid'; // 'grid' or 'flashcard'
+let flashcardDirection = localStorage.getItem('flashcardDirection') || 'kr-en';
 let synth = window.speechSynthesis;
 let koreanVoice = null;
 let currentAudio = null;
@@ -36,6 +38,18 @@ function stopAllAudio() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Landing page logic
+    if (localStorage.getItem('hangul-hasVisited')) {
+        document.body.classList.remove('show-landing');
+    }
+    const startBtn = document.getElementById('start-btn');
+    if (startBtn) {
+        startBtn.addEventListener('click', () => {
+            localStorage.setItem('hangul-hasVisited', '1');
+            document.body.classList.remove('show-landing');
+        });
+    }
+
     await loadData();
     findKoreanVoice();
     renderConsonantGrid();
@@ -736,17 +750,60 @@ function renderWordDiscovery() {
     });
     catHtml += '</div>';
 
+    const gridActive = wordViewMode === 'grid' ? 'active' : '';
+    const fcActive = wordViewMode === 'flashcard' ? 'active' : '';
+
     container.innerHTML = `
         <div class="section-header">
             <h2>Word Discovery</h2>
-            <p>Tap the card to reveal the meaning, use arrows to navigate!</p>
+            <p>Browse words or practice with flashcards!</p>
+        </div>
+        <div class="word-view-toggle">
+            <button class="wv-btn ${gridActive}" onclick="setWordView('grid')">Browse Words</button>
+            <button class="wv-btn ${fcActive}" onclick="setWordView('flashcard')">Practice Flashcards</button>
         </div>
         ${catHtml}
         <div class="word-list" id="word-list"></div>
         <div class="encouragement" id="encouragement"></div>`;
 
-    renderWordFlashcards();
+    if (wordViewMode === 'grid') {
+        renderWordGrid();
+    } else {
+        renderWordFlashcards();
+    }
     showRandomEncouragement();
+}
+
+function setWordView(mode) {
+    wordViewMode = mode;
+    renderWordDiscovery();
+}
+
+function renderWordGrid() {
+    const container = document.getElementById('word-list');
+    if (!container || !hangulData) return;
+
+    const words = hangulData.words[currentWordCategory] || [];
+    if (words.length === 0) { container.innerHTML = '<p style="color:var(--text-muted)">No words in this category.</p>'; return; }
+
+    let html = '<div class="word-grid-view">';
+    words.forEach(word => {
+        const syllableChips = word.syllables.map((syl, j) => {
+            const bd = word.breakdown[j];
+            const parts = bd ? `${bd.initial}+${bd.vowel}${bd.final ? '+' + bd.final : ''}` : '';
+            return `<span class="wg-chip" onclick="event.stopPropagation(); playSyllableChip(this, '${syl}')" title="${parts}">${syl} <small>${parts}</small></span>`;
+        }).join('');
+
+        html += `
+            <div class="word-grid-card" onclick="playWord('${word.korean}')">
+                <div class="wg-korean">${word.korean}</div>
+                <div class="wg-english">${word.english}</div>
+                <div class="wg-rom">${word.romanization}</div>
+                <div class="wg-breakdown">${syllableChips}</div>
+            </div>`;
+    });
+    html += '</div>';
+    container.innerHTML = html;
 }
 
 function switchWordCategory(category) {
@@ -757,6 +814,17 @@ function switchWordCategory(category) {
     document.querySelectorAll('.cat-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.category === category);
     });
+    if (wordViewMode === 'grid') {
+        renderWordGrid();
+    } else {
+        renderWordFlashcards();
+    }
+}
+
+function toggleFlashcardDirection() {
+    flashcardDirection = flashcardDirection === 'kr-en' ? 'en-kr' : 'kr-en';
+    localStorage.setItem('flashcardDirection', flashcardDirection);
+    wordFlipped = false;
     renderWordFlashcards();
 }
 
@@ -781,18 +849,23 @@ function renderWordFlashcards() {
         </div>`;
     }).join('<span class="syllable-plus">+</span>');
 
+    // Direction-aware content
+    const frontContent = flashcardDirection === 'en-kr' ? word.english : word.korean;
+    const backMainContent = flashcardDirection === 'en-kr' ? word.korean : word.english;
+    const dirLabel = flashcardDirection === 'kr-en' ? 'EN → KR' : 'KR → EN';
+
     container.innerHTML = `
         <div class="word-flashcard-area">
             <div class="word-flashcard" id="word-flashcard" onclick="flipWordCard()">
                 <div class="word-flashcard-inner" id="word-flashcard-inner">
                     <div class="word-flashcard-front">
-                        <div class="wf-korean">${word.korean}</div>
+                        <div class="wf-korean">${frontContent}</div>
                         <button class="wf-play-btn" onclick="event.stopPropagation(); playWord('${word.korean}')" title="Play sound">
                             <svg viewBox="0 0 24 24" width="20" height="20"><polygon points="5,3 19,12 5,21" fill="white"/></svg>
                         </button>
                     </div>
                     <div class="word-flashcard-back">
-                        <div class="wf-english">${word.english}</div>
+                        <div class="wf-english">${backMainContent}</div>
                         <div class="wf-romanization">${word.romanization}</div>
                         <div class="wf-syllables">${syllableChips}</div>
                     </div>
@@ -809,6 +882,7 @@ function renderWordFlashcards() {
             </div>
             <div class="word-fc-actions">
                 <button class="wf-action-btn" onclick="shuffleWords()">Shuffle</button>
+                <button class="wf-action-btn" onclick="toggleFlashcardDirection()">${dirLabel}</button>
             </div>
         </div>`;
 }
